@@ -85,7 +85,7 @@ export default function PlanTable() {
             →
           </button>
           <button className="h-10 w-[109px] rounded-sm bg-brand-900 text-white font-medium flex items-center justify-center gap-2 transition-colors duration-150 cursor-pointer hover:bg-brand-700 active:bg-brand-500">
-            <span className="text-accent text-xl leading-none">+</span>
+            <span className="text-xl leading-none">+</span>
             <span>Add plan</span>
           </button>
         </div>
