@@ -4,6 +4,10 @@ export type ApiResponse = {
 };
 
 export type ApiData = {
+  total?: Array<{
+    plan: MetricPair;
+    fact: MetricPair;
+  }>;
   table: AdminRow[];
 };
 
