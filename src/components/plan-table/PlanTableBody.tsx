@@ -2,8 +2,10 @@ import type { ApiResponse } from '../../api/types';
 import PlanTableSummary from './PlanTableSummary';
 import ManagerRowBlock from './ManagerRowBlock';
 
+type TotalItem = NonNullable<ApiResponse['data']['total']>[number];
+
 interface PlanTableBodyProps {
-  total: (ApiResponse['data']['total'][number] | null)[];
+  total: (TotalItem | null)[];
   rows: ApiResponse['data']['table'];
 }
 

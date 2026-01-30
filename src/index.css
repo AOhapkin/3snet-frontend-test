@@ -1,1 +1,30 @@
 @import "tailwindcss";
+
+@theme {
+  --color-brand-900: #202F55;
+  --color-brand-700: #4F669D;
+  --color-brand-500: #7796C8;
+  --color-muted-500: #A6B1B9;
+  --color-border: #D6E3EC;
+  --color-surface: #F8FAFC;
+  --color-accent: #40F3F7;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: Roboto, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Arial, 'Noto Sans', sans-serif;
+  background: white;
+  color: #202F55;
+}
+
+.page-container {
+  width: 1440px;
+  min-height: 1080px;
+  margin: 0 auto;
+  padding: 40px;
+}
