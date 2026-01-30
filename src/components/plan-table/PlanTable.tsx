@@ -65,7 +65,7 @@ export default function PlanTable() {
   return (
     <div>
       <div className="w-[1360px] mx-auto flex items-center justify-between mt-6 mb-6">
-        <button className="h-10 w-[130px] px-3 flex items-center justify-between rounded-sm border border-border bg-white text-brand-700 font-medium">
+        <button className="h-10 w-[130px] px-3 flex items-center justify-between rounded-sm border border-border bg-white text-brand-700 font-medium transition-colors duration-150 cursor-pointer hover:bg-surface hover:border-brand-500">
           <span>Year 2025</span>
           <span className="text-brand-700">▾</span>
         </button>
@@ -73,19 +73,19 @@ export default function PlanTable() {
           <button
             onClick={() => setStartIndex((prev) => (prev + 11) % 12)}
             aria-label="предыдущий месяц"
-            className="h-10 w-10 rounded-md border border-[#DDDEDF] bg-white text-brand-900 flex items-center justify-center"
+            className="h-10 w-10 rounded-md border border-[#DDDEDF] bg-white text-brand-900 flex items-center justify-center transition-colors duration-150 cursor-pointer hover:bg-surface hover:border-brand-500 active:bg-border"
           >
             ←
           </button>
           <button
             onClick={() => setStartIndex((prev) => (prev + 1) % 12)}
             aria-label="следующий месяц"
-            className="h-10 w-10 rounded-md border border-[#DDDEDF] bg-white text-brand-900 flex items-center justify-center"
+            className="h-10 w-10 rounded-md border border-[#DDDEDF] bg-white text-brand-900 flex items-center justify-center transition-colors duration-150 cursor-pointer hover:bg-surface hover:border-brand-500 active:bg-border"
           >
             →
           </button>
-          <button className="h-10 w-[109px] rounded-sm bg-brand-900 text-white font-medium flex items-center justify-center gap-2">
-            <span className="text-xl leading-none">+</span>
+          <button className="h-10 w-[109px] rounded-sm bg-brand-900 text-white font-medium flex items-center justify-center gap-2 transition-colors duration-150 cursor-pointer hover:bg-brand-700 active:bg-brand-500">
+            <span className="text-accent text-xl leading-none">+</span>
             <span>Add plan</span>
           </button>
         </div>
